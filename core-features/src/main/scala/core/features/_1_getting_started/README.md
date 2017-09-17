@@ -2,8 +2,7 @@
 * Val or Var (Immutable vs Mutable)
 * Implicit data types or Type inference
 * Explicit data types can be specified
-* There is no distinction such as primitive types and classes for primitive types
-* In Scala all primitive types are nothing but classes
+* There is no distinction such as primitive types and classes for primitive types (In Scala all primitive types are nothing but classes)
 * Few basic data types:
 
 | Name      | Description
