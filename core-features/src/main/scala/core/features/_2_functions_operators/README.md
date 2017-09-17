@@ -10,3 +10,14 @@
     * Simple reasoning principles
     * Better modularity
     * Good for leveraging multicore for parallelism and cloud computing
+    
+## Higher order functions
+* Function can be called as higher order function under which logic can be send to another function 
+* Higher order function can be used in following ways:
+    * Using named function
+    * Using function assigned to variable
+    * Using anonymous function
+    
+**_Note:_**
+* Argument to function - Data type is mandatory
+* Return from function - Data type is optional (it will be inferred automatically by scala compiler)
