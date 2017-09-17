@@ -1,11 +1,3 @@
-## Scala - Setup development environment
-
-* Setup of Scala - https://scala-lang.org/download/
-
-* Setup of Scala IDE -  
-
-* Setup SBT - http://www.scala-sbt.org/download.html
-
 ## Scala - Introduction
 * Scala is JVM based programming language
 * JVM – Java Virtual Machine is the abstraction layer between programming language and underlying operating system
@@ -21,8 +13,10 @@
     4. Scala
     5. Clojure
     6. Kotlin
-    
-## Scala - REPL (Read Evaluate Print Loop) OR CLI
+
+## Scala - Setup development environment
+
+* Setup of Scala - Install scala REPL (Read evaluate print loop) using https://scala-lang.org/download/
 
 $scala
 
@@ -53,6 +47,12 @@ All commands can be abbreviated, e.g., :he instead of :help.
 :warnings                show the suppressed warnings from the most recent line which had any
 
 ```
+
+* Setup of Scala IDE - Install scala IDE under Intellij Idea OR Eclipse
+
+
+* Setup SBT - Install SBT (Simple build tool) for building scala based project using http://www.scala-sbt.org/download.html
+
 $sbt
 
 ```
@@ -80,6 +80,7 @@ $sbt
   early(<command>)                        Schedules a command to run before other commands on startup.
   show <key>                              Displays the result of evaluating the setting or task associated with 'key'.
   all <task>+                             Executes all of the specified tasks concurrently.
+
 More command help available using 'help <command>' for:
   !, +, ++, <, alias, append, apply, eval, iflast, onFailure, reboot, shell
 
