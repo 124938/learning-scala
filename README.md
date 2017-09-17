@@ -7,12 +7,6 @@
 * Scala’s syntax follow Functional programming paradigm
 * Martin Odersky is the founder of the language and it is founded in Year 2001
 * List of JVM based programming languages
-    1. Groovy
-    2. JRuby
-    3. Jython
-    4. Scala
-    5. Clojure
-    6. Kotlin
 
 ![Alt text](02JVMProgrammingLanguages.jpg?raw=true "JVM Programming Languages")
 
