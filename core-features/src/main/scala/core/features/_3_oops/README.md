@@ -25,15 +25,18 @@
 
 * Unlike java, it takes very few lines of code to create classes along with boilerplate code
   * Without val or var, the parameter will act as constructor argument and scala does not provide getter/setter method
-    * Syntax: class Emp(id: Int, name: String)
+    * Syntax: `class Emp(id: Int, name: String)`
   * With val, the parameter will act as constructor argument and scala provides only getter method
-    * Syntax: class Emp(val id: Int, val name: String)
+    * Syntax: `class Emp(val id: Int, val name: String)`
   * With var, the parameter will act as constructor argument and scala provides getter & setter method
-    * Syntax: class Emp(var id: Int, var name: String)
+    * Syntax: `class Emp(var id: Int, var name: String)`
 * Behaviour for the default constructor can be provided inside block of code between {}
 * Multiple constructors can be created using this keyword
 * Special functions such as require & apply can be used under classes
 * Its not straight forward to override the default getter & setter method
+* All scala classes extends scala.Any (In java top class is java.lang.Object)
+* All custom classes extends scala.AnyRef
+* Functions available under classes can be overridden by keyword override
 
 **_Note:_**
 * Class/Object name and file name need not to be same (In java it must be same)
