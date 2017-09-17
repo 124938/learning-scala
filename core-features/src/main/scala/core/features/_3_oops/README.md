@@ -1,0 +1,40 @@
+## OOPs feature
+
+* Scala supports following OOPs features
+  * Polymorphism
+  * Abstraction
+  * Inheritance
+  * Encapsulation
+  * Any many more
+  
+* It uses following structures to implement above features
+  * Classes and subclasses
+  * Objects (Singleton classes)
+  * Traits (Combination of abstract classes and interfaces)
+  * And many more
+    
+## Objects
+
+* Object is special tpe of class which has following characteristics:
+  * Object can be considered as singleton class
+  * Object can't be instantiated using new keyword i.e. constructor can't be created in object
+  * All variables and functions available in object are implicitly static
+  * main function must be part of object to run/execute the program
+
+## Classes
+
+* Unlike java, it takes very few lines of code to create classes along with boilerplate code
+  * Without val or var, the parameter will act as constructor argument and scala does not provide getter/setter method
+    * Syntax: class Emp(id: Int, name: String)
+  * With val, the parameter will act as constructor argument and scala provides only getter method
+    * Syntax: class Emp(val id: Int, val name: String)
+  * With var, the parameter will act as constructor argument and scala provides getter & setter method
+    * Syntax: class Emp(var id: Int, var name: String)
+* Behaviour for the default constructor can be provided inside block of code between {}
+* Multiple constructors can be created using this keyword
+* Special functions such as require & apply can be used under classes
+* Its not straight forward to override the default getter & setter method
+
+**_Note:_**
+* Class/Object name and file name need not to be same (In java it must be same)
+* Multiple classes/object can be declared in same file (In java it's not possible)
