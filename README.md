@@ -8,11 +8,11 @@
 * Martin Odersky is the founder of the language and it is founded in Year 2001
 * List of JVM based programming languages
 
-![Alt text](02JVMProgrammingLanguages.jpg?raw=true "JVM Programming Languages")
+![Alt text](01JVMProgrammingLanguages.jpg?raw=true "JVM Programming Languages")
 
 * Architecture of JVM based programming language
 
-![Alt text](01JVMProgrammingLanguagesArchitecture.png?raw=true "JVM Programming Language - Architecture")
+![Alt text](02JVMProgrammingLanguagesArchitecture.png?raw=true "JVM Programming Language - Architecture")
 
 * Consolidated view of JVM based programming languages architecture
 
