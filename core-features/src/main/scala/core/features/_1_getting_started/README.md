@@ -1,6 +1,15 @@
 ## Declaring variables
-1. Immutable variable - val should be used to declare immutable variable 
-2. Mutable variable - var should be used to declare mutable variable
+* Immutable variable - val should be used to declare immutable variable 
+* Mutable variable - var should be used to declare mutable variable
+
+
+## Basic programming constructs
+* Expression
+* Nested block
+* Condition block (if - else if - else)
+* Ternary operator
+* While loop
+* For loop
 
 _Note:_
 -
