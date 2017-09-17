@@ -20,18 +20,18 @@
 
 
 ## Basic programming constructs
-* Code blocks
-    * Any thing that comes in the middle of { } is considered to be block of code
-    * A block of code can be assigned to a variable (Code will be evaluated first and then the value will be returned to variable)
-    * Each line of code need not be ended with ; (But in case of writing more than one expression in one line then each expression should be ended with ;)
-    * Blocks can be nested as well
-    * In code blocks, the last statement of the code-block becomes the return value
 * Expression
 * Nested block
 * Condition block (if - else if - else)
 * Ternary operator
 * While loop
 * For loop
+* Code blocks
+    * Any thing that comes in the middle of { } is considered to be block of code
+    * A block of code can be assigned to a variable (Code will be evaluated first and then the value will be returned to variable)
+    * Each line of code need not be ended with ; (But in case of writing more than one expression in one line then each expression should be ended with ;)
+    * Blocks can be nested as well
+    * In code blocks, the last statement of the code-block becomes the return value
 
 _**Note:**_
 - Scala is strongly typed programming language & type can be inferred automatically by scala compiler
