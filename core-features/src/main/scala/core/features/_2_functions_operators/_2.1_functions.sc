@@ -1,8 +1,3 @@
-/*
-- Argument to function - Data type is mandatory
-- Return from function - Data type is optional (it will be inferred automatically by scala compiler)
- */
-
 println("************* Create function to find out factorial of number **************")
 def fact(n: Int) :Int = {
   var res = 1
