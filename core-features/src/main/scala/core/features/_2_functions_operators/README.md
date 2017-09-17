@@ -17,7 +17,10 @@
     * Using named function
     * Using function assigned to variable
     * Using anonymous function
-    
+
+## Anonymous functions
+* Function without name called as anonymous function
+
 **_Note:_**
 * Argument to function - Data type is mandatory
 * Return from function - Data type is optional (it will be inferred automatically by scala compiler)
