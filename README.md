@@ -21,8 +21,17 @@
 
 ## Scala - Setup development environment
 
-* Setup of Scala - Install scala REPL using https://scala-lang.org/download/
-  * REPL stands for Read, Evaluate (Compiled and run), Print (output will be printed), Loop (will wait for another code snippet)
+* Scala Setup
+  * Download scala (tar/zip) from https://scala-lang.org/download/
+  * Create environment variable called SCALA_HOME=/path/to/scala-version
+  * Update environment variable called PATH=%PATH%:$SCALA_HOME/bin
+
+* Scala REPL
+  * REPL stands for read evaluate print loop 
+    * Read (Read the input)
+    * Evaluate (Compiled and run)
+    * Print (output will be printed)
+    * Loop (will wait for another code snippet)
   * It is also called as command Line Interface like SQLPLUS, Python etc.
   * It is interactive way of validating the code
 
