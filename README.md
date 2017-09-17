@@ -5,7 +5,7 @@
 * Even though Scala programs compiles into Java byte code – syntactically it is very different from Java
 * Scala is open source and object oriented
 * Scala’s syntax follow Functional programming paradigm
-* Martin Odersky is the founder of the language and it is founded in Year 2001
+* Martin Odersky is the founder of the language scala and it is founded in Year 2001
 * List of JVM based programming languages
 
 ![Alt text](01JVMProgrammingLanguages.jpg?raw=true "JVM Programming Languages")
@@ -18,9 +18,13 @@
 
 ![Alt text](03JVMProgrammingLanguagesConslidatedView.png?raw=true "JVM Programming Language - Consolidated View")
 
+
 ## Scala - Setup development environment
 
-* Setup of Scala - Install scala REPL (Read evaluate print loop) using https://scala-lang.org/download/
+* Setup of Scala - Install scala REPL using https://scala-lang.org/download/
+  * REPL stands for Read, Evaluate (Compiled and run), Print (output will be printed), Loop (will wait for another code snippet)
+  * It is also called as command Line Interface like SQLPLUS, Python etc.
+  * It is interactive way of validating the code
 
 $scala
 
