@@ -12,6 +12,10 @@
   * Objects (Singleton classes)
   * Traits (Combination of abstract classes and interfaces)
   * And many more
+
+* Below is the default scala class hierarchy
+
+![Alt text](scala_class_hierarchy.png?raw=true "Scala class hierarchy")
     
 ## Objects
 
@@ -52,18 +56,17 @@
   * Implementation of Serializable interface
   * Implementation of toString() method
 
-**_Note:_**
+### **_Note:_** ###
+
 * Class/Object name and file name need not to be same (In java it must be same)
 * Multiple classes/object can be declared in same file (In java it's not possible)
 * All core classes extends scala.Any (In java top class is java.lang.Object)
 * All core classes like Any, AnyRef etc. are part of scala package
 * All custom classes extends scala.AnyRef
-* apply is considered to be special method and it can be called without .
 * To import all classes available under package, _ should get used (In java it is *)
   * e.g. `import org.commpany.group.util._`
 * To import specific class available under package, class name should get used
   * e.g. `import org.commpany.group.util.WebPackUtils`
-* scala.util package contains utility classes
-* scala.collection package contains collection classes
+* apply is considered to be special method and it can be called without .
 * Metadata of class can be find out using below command on Scala REPL
   * e.g. `:javap -p org.commpany.group.util.WebPackUtils`
