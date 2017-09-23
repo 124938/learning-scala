@@ -14,6 +14,7 @@
   * And many more
 
 * Below is the default scala class hierarchy
+  * All core classes are part of scala package
 
 ![Alt text](scala_class_hierarchy.png?raw=true "Scala class hierarchy")
 
