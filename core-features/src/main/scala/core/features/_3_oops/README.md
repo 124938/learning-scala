@@ -16,6 +16,7 @@
 * Below is the default scala class hierarchy
 
 ![Alt text](scala_class_hierarchy.png?raw=true "Scala class hierarchy")
+
     
 ## Objects
 
@@ -60,9 +61,6 @@
 
 * Class/Object name and file name need not to be same (In java it must be same)
 * Multiple classes/object can be declared in same file (In java it's not possible)
-* All core classes extends scala.Any (In java top class is java.lang.Object)
-* All core classes like Any, AnyRef etc. are part of scala package
-* All custom classes extends scala.AnyRef
 * To import all classes available under package, _ should get used (In java it is *)
   * e.g. `import org.commpany.group.util._`
 * To import specific class available under package, class name should get used
