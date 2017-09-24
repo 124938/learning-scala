@@ -4,6 +4,21 @@ println("********* Usage of Range ***********")
 (1 to 10 by 2).foreach(n => print(s"$n "))
 (20 to 1 by -3).foreach(n => print(s"$n "))
 
+println("********* Tradition way to calculate sum or square of even numbers *********")
+var res1 = 0
+for (e <- 1 to 100) {
+  if (e % 2 == 0)
+    res1 = res1 + (e * e)
+}
+println(s"Sum of square of even number from 1 to 100 -> $res1")
+
+println("********* Functional way to calculate sum or square of even numbers *********")
+val res2 = (1 to 100).filter(n => n% 2 == 0)
+                    .map(n => n * n)
+                    .reduce((agg, ele) => agg + ele)
+
+println(s"Sum of square of even number from 1 to 100 -> $res2")
+
 println("********* Usage of Mutable collection *********")
 
 // Array is special type of mutable collection in scala
@@ -30,19 +45,3 @@ val l = List(1, 2, 3, 4)
 // Access element using index from collection
 println("First element of list is -> "+l(0))
 println("Third element of list is -> "+l(3))
-
-println("********* Tradition way to calculate sum or square of even numbers *********")
-var res1 = 0
-for (e <- 1 to 100) {
-  if (e % 2 == 0)
-    res1 = res1 + (e * e)
-}
-println(s"Sum of square of even number from 1 to 100 -> $res1")
-
-println("********* Functional way to calculate sum or square of even numbers *********")
-val res2 = (1 to 100).filter(n => n% 2 == 0)
-                    .map(n => n * n)
-                    .reduce((agg, ele) => agg + ele)
-
-println(s"Sum of square of even number from 1 to 100 -> $res2")
-
