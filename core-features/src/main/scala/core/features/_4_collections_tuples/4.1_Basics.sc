@@ -1,3 +1,9 @@
+println("************** Scala creates immutable collection by default **************")
+Array
+List
+Vector
+Set
+Map
 
 println("********* Usage of Range ***********")
 (1 to 10).foreach(n => print(s"$n "))
