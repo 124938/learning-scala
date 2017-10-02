@@ -2,7 +2,7 @@ import scala.io.Source
 
 val electionFile = "/home/asus/source_code/github/124938/learning-scala/core-features/src/main/resources/ls2014.tsv"
 
-println("***** Ex-1: Find out distinct constituencies by state ********")
+println("***** Ex-1: Find out distinct constituencies for each state ********")
 Source.fromFile(electionFile)
   .getLines()
   .drop(1)
