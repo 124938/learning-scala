@@ -24,7 +24,7 @@
 * Setup of Scala REPL
   * Download scala (tar/zip) from https://scala-lang.org/download/
   * Create environment variable called `SCALA_HOME=/path/to/scala-version`
-  * Update environment variable called `PATH=%PATH%:$SCALA_HOME/bin`
+  * Update environment variable called `PATH=$PATH:$SCALA_HOME/bin`
 
 * What is Scala REPL?
   * REPL stands for read evaluate print loop 
@@ -63,9 +63,9 @@ All commands can be abbreviated, e.g., :he instead of :help.
 :kind [-v] <type>        display the kind of a type. see also :help kind
 :warnings                show the suppressed warnings from the most recent line which had any
 
-scala>val a = 10
-scala>val b = 20
-scala>a + b
+scala> val a = 10
+scala> val b = 20
+scala> a + b
 
 ~~~
 
@@ -76,7 +76,7 @@ scala>a + b
 * Setup of SBT
   * Install SBT (Simple build tool) for building scala based project using http://www.scala-sbt.org/download.html
   * Create environment variable called `SBT_HOME=/path/to/sbt-version`
-  * Update environment variable called `PATH=%PATH%:$SBT_HOME/bin`
+  * Update environment variable called `PATH=$PATH:$SBT_HOME/bin`
 
 ~~~
 
