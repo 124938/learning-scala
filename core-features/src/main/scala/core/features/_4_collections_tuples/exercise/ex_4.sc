@@ -11,7 +11,7 @@ val totalVotes = Source.fromFile(electionFile)
   .map((record: String) => record.split("\t")(10).toInt)
   .sum
 
-val partyVotesCount = Source.fromFile(electionFile)
+Source.fromFile(electionFile)
   .getLines()
   .drop(1)
   .filter((record: String) => record.split("\t")(2) != "None of the Above")
