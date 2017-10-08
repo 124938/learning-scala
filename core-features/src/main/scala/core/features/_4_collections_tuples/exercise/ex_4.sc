@@ -8,11 +8,7 @@ val totalVotes = Source.fromFile(electionFile)
   .getLines()
   .drop(1)
   .filter((record: String) => record.split("\t")(2) != "None of the Above")
-  .map((record: String) => {
-    val recordArray = record.split("\t")
-    (recordArray(6).trim, recordArray(10).toInt)
-  })
-  .map((t: (String, Int)) => t._2)
+  .map((record: String) => record.split("\t")(10).toInt)
   .sum
 
 val partyVotesCount = Source.fromFile(electionFile)
