@@ -186,15 +186,15 @@ xs.distinct         | A sub-sequence of xs that contains no duplicated element
 
 | Method Name | Description |
 |-------------|-------------|
-+       | Add one element to set, yielding a new set
-++      | Add multiple elements to set, yielding a new set
+| +       | Add one element to set, yielding a new set
+| ++      | Add multiple elements to set, yielding a new set
 
 **Removals:**
 
 | Method Name | Description |
 |-------------|-------------|
--       | Remove one element from set, yielding a new set
---      | Remove multiple elements from set, yielding a new set
+| -       | Remove one element from set, yielding a new set
+| --      | Remove multiple elements from set, yielding a new set
 
 **Test:**
 
