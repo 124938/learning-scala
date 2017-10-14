@@ -176,6 +176,13 @@ xs.distinct         : A subsequence of xs that contains no duplicated element
 * SortedSet can be used to sort data (if implicit ordering is defined for element)
 * List of useful methods:
 
+**Additions:**
+
+| Method Name | Description |
+|-------------|-------------|
+| +  | Add one element to set, yielding a new set |
+| ++ | Add multiple elements to set, yielding a new set |
+
 ~~~
 
 -------------------
