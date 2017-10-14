@@ -22,72 +22,74 @@
 * It's a trait containing common functionality required by collection API i.e. the reason why it's on the top of collection hierarchy
 * List of useful methods are:
 
-~~~
+**Abstract method:**
 
----------------
-Abstract method
----------------
-xs foreach f    :  
+| Method Name | Description |
+|-------------|-------------|
+xs foreach f | -
 
----------------
-Addition
----------------
-xs ++ ys        : Add two collection
+**Addition:**
 
----------------
-Maps
----------------
-xs map f        : The collection obtained from applying the function f to every element in xs
-xs flatMap f    : The collection obtained from applying the collection values function f to every element in xs and concatenating the result
-xs map f        : The collection obtained from applying the partial function f to every element in xs for which it is defined and collecting the result
+| Method Name | Description |
+|-------------|-------------|
+xs ++ ys | Add two collection
 
----------------
-Conversions
----------------
-xs.toArray      : Converts the collection to an array
-xs.toList       : Converts the collection to a list
-xs.toIterable   : Converts the collection to an iterable
-xs.toSeq        : Converts the collection to a sequence
-xs.toIndexedSeq : Converts the collection to an indexed sequence
-xs.toStream     : Converts the collection to a lazily computed stream
-xs.toSet        : Converts the collection to a set
-xs.toMap        : Converts the collection of key/value pair to a map. 
+**Map:**
 
----------------
-Size
----------------
-xs.isEmpty          : Tests whether collection is empty
-xs.nonEmpty         : Tests whether collection contains elements
-xs.size             : Returns number of elements in the collection
-xs.hasDefiniteSize  : True if xs is known to have finite size
+| Method Name | Description |
+|-------------|-------------|
+xs map f  | The collection obtained from applying the function f to every element in xs 
+xs flatMap f |The collection obtained from applying the collection values function f to every element in xs and concatenating the result
+xs map f | The collection obtained from applying the partial function f to every element in xs for which it is defined and collecting the result
 
-------------------
-Element retrieval
-------------------
-xs.head         : The first element of the collection OR some element, if no order is defined
-xs.headOption   : The first element of xs in an option value OR none, if xs is empty
-xs.last         : The last element of the collection OR some element, if no order is defined
-xs.headOption   : The last element of xs in an option value OR none, if xs is empty
+**Conversion:**
 
-~~~
+| Method Name | Description |
+|-------------|-------------|
+xs.toArray | Converts the collection to an array
+xs.toList | Converts the collection to a list
+xs.toIterable | Converts the collection to an iterable
+xs.toSeq | Converts the collection to a sequence
+xs.toIndexedSeq | Converts the collection to an indexed sequence
+xs.toStream | Converts the collection to a lazily computed stream
+xs.toSet | Converts the collection to a set
+xs.toMap | Converts the collection of key/value pair to a map
+
+**Size:**
+
+| Method Name | Description |
+|-------------|-------------|
+xs.isEmpty | Tests whether collection is empty
+xs.nonEmpty | Tests whether collection contains elements
+xs.size | Returns number of elements in the collection
+xs.hasDefiniteSize | True if xs is known to have finite size
+
+**Element retrieval:**
+
+| Method Name | Description |
+|-------------|-------------|
+xs.head | The first element of the collection OR some element, if no order is defined
+xs.headOption | The first element of xs in an option value OR none, if xs is empty
+xs.last | The last element of the collection OR some element, if no order is defined
+xs.headOption | The last element of xs in an option value OR none, if xs is empty
+
 
 ## Iterable
 
 * Implementation of foreach is provided here
 
-~~~
+**Abstract method:**
 
----------------
-Abstract method
----------------
-xs iterator    : Iterate through each element of xs
+| Method Name | Description |
+|-------------|-------------|
+xs iterator | Iterate through each element of xs
 
-------------------
-Implemented method
-------------------
-xs foreach f    : Executes function f for every element of xs
+**Implemented method:**
 
-~~~
+| Method Name | Description |
+|-------------|-------------|
+xs foreach f | Executes function f for every element of xs
+
 
 ## Seq
 
@@ -100,26 +102,29 @@ xs foreach f    : Executes function f for every element of xs
 * Array is special type of collection in scala (analogous to java Array)
 * List of useful methods in Seq
 
+**Indexing and length:**
+
+| Method Name | Description |
+|-------------|-------------|
+xs(i) | (or, written out, xs apply i). The element of xs at index i
+xs isDefinedAt i | Tests whether i is contained in xs.indices
+xs.length | The length of the sequence (same as size)
+xs.indices | The index range of xs, extending from 0 to xs.length - 1
+
+**Index Search:**
+
+| Method Name | Description |
+|-------------|-------------|
+xs indexOf x | The index of the first element in xs equal to x (several variants exist)
+xs lastIndexOf x | The index of the last element in xs equal to x (several variants exist)
+xs indexOfSlice ys | The first index of xs such that successive elements starting from that index form the sequence ys
+xs lastIndexOfSlice ys |The last index of xs such that successive elements starting from that index form the sequence ys
+xs indexWhere p | The index of the first element in xs that satisfies p (several variants exist)
+xs segmentLength (p, i) | The length of the longest uninterrupted segment of elements in xs, starting with xs(i), that all satisfy the predicate p
+xs prefixLength p | The length of the longest prefix of elements in xs that all satisfy the predicate p
+
 ~~~
 
--------------------
-Indexing and length
--------------------
-xs(i)               : (or, written out, xs apply i). The element of xs at index i
-xs isDefinedAt i    : Tests whether i is contained in xs.indices
-xs.length           : The length of the sequence (same as size)
-xs.indices          : The index range of xs, extending from 0 to xs.length - 1
-
--------------------
-Index Search
--------------------
-xs indexOf x            : The index of the first element in xs equal to x (several variants exist)
-xs lastIndexOf x        : The index of the last element in xs equal to x (several variants exist)
-xs indexOfSlice ys      : The first index of xs such that successive elements starting from that index form the sequence ys
-xs lastIndexOfSlice ys	: The last index of xs such that successive elements starting from that index form the sequence ys
-xs indexWhere p         : The index of the first element in xs that satisfies p (several variants exist)
-xs segmentLength (p, i)	: The length of the longest uninterrupted segment of elements in xs, starting with xs(i), that all satisfy the predicate p
-xs prefixLength p       : The length of the longest prefix of elements in xs that all satisfy the predicate p
 
 -------------------
 Additions:
