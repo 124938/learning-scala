@@ -183,37 +183,31 @@ xs.distinct         : A subsequence of xs that contains no duplicated element
 | +  | Add one element to set, yielding a new set |
 | ++ | Add multiple elements to set, yielding a new set |
 
-~~~
+**Removals:**
 
--------------------
-Additions:
--------------------
-+       : Add one element to set, yielding a new set
-++      : Add multiple elements to set, yielding a new set
+| Method Name | Description |
+|-------------|-------------|
+| -  | Remove one element from set, yielding a new set |
+| -- | Remove multiple elements from set, yielding a new set |
 
--------------------
-Removals:
--------------------
--       : Remove one element from set, yielding a new set
---      : Remove multiple elements from set, yielding a new set
+**Test:**
 
--------------------
-Tests Operations:
--------------------
-contains    : Remove one element from set, yielding a new set
-apply       : It is same as contains
+| Method Name | Description |
+|-------------|-------------|
+| contains | Remove one element from set, yielding a new set |
+| apply | It is same as contains |
 
--------------------
-Other Operations:
--------------------
-union       : It will perform union operation on multiple set
-intersect   : It will find out common elements from multiple set
-diff        : It will find out elements present in first set and not present in second set
-|           : Same as union
-&           : Same as intersect
-&~          : Same as diff
+**Others:**
 
-~~~
+| Method Name | Description |
+|-------------|-------------|
+| union | It will perform union operation on multiple set |
+| intersect | It will find out common elements from multiple set |
+| diff | It will find out elements present in first set and not present in second set |
+| pipe | Same as union |
+| &  | Same as intersect |
+| &~ | Same as diff |
+
 
 ## Map
 
