@@ -1,1 +1,4 @@
-/core-features/target
+core-features/target/*
+core-features/.idea/*
+core-features/project/*
+
